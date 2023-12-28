@@ -5,7 +5,7 @@ export default (state, action) => {
                 ...state,
                 transaction: state.transaction.filter(transaction => transaction.id !== action.payload)
             }
-        case '=ADD_TRANSACTION':
+        case 'ADD_TRANSACTION':
             return {
                 ...state,
                 transaction: [action.payload, ...state.transaction]
